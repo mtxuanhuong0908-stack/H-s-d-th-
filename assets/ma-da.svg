@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-label="Minh họa nguyên bản MA DA">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18353a"/><stop offset=".55" stop-color="#0a1a1e"/><stop offset="1" stop-color="#07070b"/></linearGradient>
+ <radialGradient id="glow-bg"><stop stop-color="#5b9b9b" stop-opacity=".45"/><stop offset="1" stop-color="#5b9b9b" stop-opacity="0"/></radialGradient>
+ <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b9b9b" stop-opacity="0"/><stop offset="1" stop-color="#5b9b9b" stop-opacity=".35"/></linearGradient>
+ <filter id="glow-filter"><feGaussianBlur stdDeviation="7"/></filter>
+ <pattern id="grain" width="58" height="58" patternUnits="userSpaceOnUse"><path d="M0 17H58M0 48H58" stroke="#fff" stroke-opacity=".025"/><circle cx="11" cy="13" r="1" fill="#fff" fill-opacity=".12"/><circle cx="39" cy="36" r=".7" fill="#fff" fill-opacity=".1"/></pattern>
+</defs>
+<rect width="640" height="760" fill="url(#bg)"/><ellipse cx="320" cy="310" rx="290" ry="340" fill="url(#glow-bg)"/>
+<circle cx="455" cy="158" r="86" fill="#5b9b9b" opacity=".1"/><circle cx="455" cy="158" r="56" fill="none" stroke="#5b9b9b" stroke-opacity=".25"/>
+<path d="M0 570 Q85 503 175 558 T360 552 T640 525 V760 H0Z" fill="#07070c" opacity=".7"/>
+<g opacity=".6" fill="#08080c"><path d="M0 0H34L16 760H0Z"/><path d="M86 0H103L79 760H62Z"/><path d="M550 0H565L601 760H582Z"/><path d="M612 0H640V760H625Z"/><path d="M0 575L90 210L111 575Z"/><path d="M510 580L545 170L589 580Z"/></g>
+<g transform="translate(0 15)"><g fill="#071014" opacity=".92"><path d="M280 270 Q287 228 320 225 Q350 228 358 270 L346 342 L364 404 L341 414 L322 342 L307 418 L283 407 L298 342Z"/><path d="M290 266 Q256 306 248 353 L267 362 L305 304Z"/><path d="M350 266 Q377 302 389 349 L370 361 L334 304Z"/><path d="M296 403 L313 405 L301 489 L281 502 L272 494Z"/><path d="M333 403 L350 405 L368 491 L352 502 L337 485Z"/></g><ellipse cx="320" cy="247" rx="24" ry="28" fill="#101b20"/><path d="M301 246 Q320 258 339 246" fill="none" stroke="#6fb9b4" stroke-width="2" opacity=".8"/><g fill="none" stroke="#5bb4b0" stroke-width="3" opacity=".65"><path d="M125 390 Q200 370 270 400 T510 400"/><path d="M110 425 Q200 406 270 430 T526 430"/><path d="M130 461 Q210 447 275 465 T503 463"/></g></g>
+<rect width="640" height="760" fill="url(#mist)"/><rect width="640" height="760" fill="url(#grain)"/>
+<rect x="25" y="25" width="590" height="710" rx="7" fill="none" stroke="#5b9b9b" stroke-opacity=".35"/>
+<path d="M25 87H115M525 87H615M25 681H115M525 681H615" stroke="#5b9b9b" stroke-opacity=".55"/>
+<text x="42" y="63" font-family="monospace" font-size="15" letter-spacing="3" fill="#e8dce4" opacity=".9">HỒ SƠ DỊ THỂ</text>
+<text x="598" y="63" text-anchor="end" font-family="monospace" font-size="12" letter-spacing="2" fill="#5b9b9b">VIETNAMESE FOLK MOTIF</text>
+<text x="42" y="694" font-family="Georgia,serif" font-size="29" fill="#f0e7ed" letter-spacing="1">MA DA</text>
+<text x="43" y="717" font-family="monospace" font-size="10" fill="#b5a8b8" letter-spacing="3">ORIGINAL VECTOR STUDY / NOT A PHOTOGRAPH</text>
+</svg>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0a10">
+  <meta name="description" content="Hồ Sơ Dị Thể — thư viện tra cứu các thực thể kinh dị, truyền thuyết dân gian và nhân vật hư cấu, có phân loại nguồn gốc và mức độ kiểm chứng.">
+  <title>Hồ Sơ Dị Thể — Kho lưu trữ những điều chưa gọi tên</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Hồ Sơ Dị Thể — Trang chủ">
+      <span class="brand-mark"><span></span><span></span><span></span></span>
+      <span class="brand-text"><strong>HỒ SƠ DỊ THỂ</strong><small>ARCHIVE OF THE UNKNOWN</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Điều hướng chính">
+      <a href="#/" data-nav="home">Thư viện</a>
+      <a href="#/favorites" data-nav="favorites">Yêu thích <span id="favoriteNavCount" class="nav-count">0</span></a>
+      <a href="#/compare" data-nav="compare">Đối chiếu</a>
+      <a href="#/contribute" data-nav="contribute">Đóng góp</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="exportBtn" title="Xuất dữ liệu JSON" aria-label="Xuất dữ liệu JSON"><span>⇩</span></button>
+      <button class="icon-btn" id="importBtn" title="Nhập dữ liệu JSON" aria-label="Nhập dữ liệu JSON"><span>⇧</span></button>
+      <input id="importFile" type="file" accept="application/json,.json" hidden>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-label">KHU VỰC LƯU TRỮ</div>
+      <a class="side-link" href="#/" data-nav="home"><span class="side-icon">⌂</span><span>Tổng quan</span><span class="side-arrow">↗</span></a>
+      <a class="side-link" href="#/favorites" data-nav="favorites"><span class="side-icon">✦</span><span>Hồ sơ đã lưu</span></a>
+      <a class="side-link" href="#/history" data-nav="history"><span class="side-icon">◷</span><span>Lịch sử khám phá</span></a>
+      <a class="side-link" href="#/compare" data-nav="compare"><span class="side-icon">⇄</span><span>Đối chiếu thực thể</span></a>
+      <a class="side-link" href="#/contribute" data-nav="contribute"><span class="side-icon">＋</span><span>Đóng góp hồ sơ</span></a>
+      <div class="side-separator"></div>
+      <div class="side-label">DANH MỤC NHANH</div>
+      <button class="category-link" data-filter-class="Truyền thuyết dân gian"><span class="category-dot dot-red"></span>Truyền thuyết dân gian</button>
+      <button class="category-link" data-filter-class="Nhân vật hư cấu hiện đại"><span class="category-dot dot-violet"></span>Hư cấu hiện đại</button>
+      <button class="category-link" data-filter-class="Thần thoại / văn học"><span class="category-dot dot-gold"></span>Thần thoại & văn học</button>
+      <button class="category-link" data-filter-class="Sinh vật huyền bí / đô thị"><span class="category-dot dot-blue"></span>Sinh vật huyền bí</button>
+      <div class="side-note">
+        <span class="note-mark">i</span>
+        <p><strong>Ghi chú hồ sơ</strong>Thông tin về năng lực siêu nhiên là mô-típ trong truyện kể hoặc tác phẩm, không phải bằng chứng khoa học.</p>
+      </div>
+      <div class="sidebar-bottom"><span class="status-pulse"></span> HỆ THỐNG LƯU TRỮ CỤC BỘ <span class="version">v1.0</span></div>
+    </aside>
+
+    <main id="mainContent" class="main-content" tabindex="-1">
+      <div class="loading-state"><span class="loading-orb"></span><p>Đang mở hồ sơ lưu trữ…</p></div>
+    </main>
+  </div>
+
+  <div id="compareDock" class="compare-dock" hidden>
+    <div><span class="dock-symbol">⇄</span><strong><span id="compareDockCount">0</span> hồ sơ đã chọn</strong><small>Chọn từ 2 hồ sơ để đối chiếu</small></div>
+    <button class="button button-primary button-small" id="openCompareBtn">Mở bảng đối chiếu <span>↗</span></button>
+    <button class="dock-clear" id="clearCompareBtn" aria-label="Bỏ chọn tất cả">×</button>
+  </div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <footer class="site-footer"><span>HỒ SƠ DỊ THỂ</span><span>HƯ CẤU · TRUYỀN THUYẾT · TƯ LIỆU</span><span>Chạy cục bộ trên thiết bị của bạn</span></footer>
+</body>
+</html>
